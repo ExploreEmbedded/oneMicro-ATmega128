@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:ATMega128_Breakout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,6 +32,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:at128-cache
 LIBS:Starter_AVR-cache
+LIBS:ExploreM3-cache
 LIBS:ATMega128_Breakout-cache
 EELAYER 25 0
 EELAYER END
@@ -77,17 +79,6 @@ F 1 "22PF" H 3750 1500 50  0000 L CNN
 F 2 "" H 3700 1600 60  0001 C CNN
 F 3 "" H 3700 1600 60  0001 C CNN
 	1    3700 1600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CRYSTAL X1
-U 1 1 55530906
-P 4050 1900
-F 0 "X1" H 4050 2050 60  0000 C CNN
-F 1 "16Mhz" H 4050 1750 60  0000 C CNN
-F 2 "" H 4050 1900 60  0001 C CNN
-F 3 "" H 4050 1900 60  0001 C CNN
-	1    4050 1900
 	0    -1   -1   0   
 $EndComp
 Text Label 2300 3600 0    60   ~ 0
@@ -182,7 +173,7 @@ Connection ~ 3400 1900
 Wire Wire Line
 	3150 2000 3150 1900
 Wire Wire Line
-	3150 1900 3400 1900
+	3150 1900 3875 1900
 Connection ~ 4050 2200
 Wire Wire Line
 	3900 2200 4400 2200
@@ -1351,14 +1342,35 @@ Logo
 Text Notes 10100 2700 0    60   ~ 0
 Mounting Holes
 $Comp
-L R R?
+L R R4
 U 1 1 579C49F3
 P 5850 6150
-F 0 "R?" V 5930 6150 50  0000 C CNN
+F 0 "R4" V 5930 6150 50  0000 C CNN
 F 1 "470r" V 5857 6151 50  0000 C CNN
 F 2 "" V 5780 6150 30  0000 C CNN
 F 3 "" H 5850 6150 30  0000 C CNN
 	1    5850 6150
 	0    1    1    0   
 $EndComp
+$Comp
+L 12Mhz_SMD U?
+U 1 1 57E8ED39
+P 4050 1900
+F 0 "U?" H 4150 1750 60  0000 C CNN
+F 1 "12Mhz_SMD" H 4050 1650 60  0000 C CNN
+F 2 "" H 4050 1900 60  0000 C CNN
+F 3 "" H 4050 1900 60  0000 C CNN
+	1    4050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1725 4050 1600
+Wire Wire Line
+	4050 2075 4050 2200
+Wire Wire Line
+	4225 1900 4225 2025
+Wire Wire Line
+	4225 2025 3875 2025
+Wire Wire Line
+	3875 2025 3875 1900
 $EndSCHEMATC

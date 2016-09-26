@@ -1,4 +1,4 @@
-update=23-Aug-16 6:59:37 PM
+update=9/26/2016 3:01:46 PM
 version=1
 last_client=kicad
 [general]
@@ -86,3 +86,4 @@ LibName31=contrib
 LibName32=valves
 LibName33=H:/PCB_Designes/Devolopment Boards/ATMEGA-128 - Final/at128-cache
 LibName34=H:/PCB_Designes/Devolopment Boards/Starter_AVR_USB_V1/Starter_AVR_USB/Starter_AVR-cache
+LibName35=H:/Github/Explore-M3-Hardware-Design-/Hardware Design Files/ExploreM3-cache

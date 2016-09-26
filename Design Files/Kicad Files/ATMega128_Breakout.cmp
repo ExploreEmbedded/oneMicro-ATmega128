@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 7/30/2016 11:59:36 AM
+Cmp-Mod V01 Created by Cvpcb (2015-01-16 BZR 5376)-product   date = 9/26/2016 3:23:50 PM
 
 BeginCmp
 TimeStamp = /55530900;
@@ -193,7 +193,7 @@ BeginCmp
 TimeStamp = /5553090D;
 Reference = SW1;
 ValeurCmp = rst;
-IdModule  = EE:SW_PUSH_SMALL_2pin_3D_xl;
+IdModule  = EE:smd_push2;
 EndCmp
 
 BeginCmp
@@ -204,10 +204,10 @@ IdModule  = EE:cp2102_xl2;
 EndCmp
 
 BeginCmp
-TimeStamp = /55530906;
-Reference = X1;
-ValeurCmp = 16Mhz;
-IdModule  = Discret:HC-49V;
+TimeStamp = /57E8ED39;
+Reference = U2;
+ValeurCmp = 16Mhz_SMD;
+IdModule  = EE:16Mhz_5x3.2mm_Crystal;
 EndCmp
 
 EndListe
