@@ -1,0 +1,275 @@
+
+SevenSegment_FireHelp.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000016e  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006cc  00000000  00000000  000001c4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000085  00000000  00000000  00000890  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000080  00000000  00000000  00000918  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_info   0000053d  00000000  00000000  00000998  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000016f  00000000  00000000  00000ed5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000317  00000000  00000000  00001044  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_frame  00000044  00000000  00000000  0000135c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000163  00000000  00000000  000013a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00000084  00000000  00000000  00001503  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 46 00 	jmp	0x8c	; 0x8c <__ctors_end>
+   4:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   8:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  10:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  14:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  18:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  1c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  20:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  24:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  28:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  2c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  30:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  34:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  38:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  3c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  40:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  44:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  48:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  4c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  50:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  54:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  58:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  5c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  60:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  64:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  68:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  6c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  70:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  74:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  78:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  7c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  80:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  84:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  88:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee e6       	ldi	r30, 0x6E	; 110
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 30       	cpi	r26, 0x00	; 0
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	11 e0       	ldi	r17, 0x01	; 1
+  b4:	a0 e0       	ldi	r26, 0x00	; 0
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a0 30       	cpi	r26, 0x00	; 0
+  be:	b1 07       	cpc	r27, r17
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	0e 94 96 00 	call	0x12c	; 0x12c <main>
+  c6:	0c 94 b5 00 	jmp	0x16a	; 0x16a <_exit>
+
+000000ca <__bad_interrupt>:
+  ca:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ce <display>:
+#define SegFour  0x08
+#define NoSeg    0x00	 	 
+
+
+void display(unsigned char seg_code[])
+{						   
+  ce:	fc 01       	movw	r30, r24
+  d0:	88 ec       	ldi	r24, 0xC8	; 200
+	unsigned char i;
+								  
+   for(i=0;i<200;i++)	   
+   	 { 
+	   SegmentSlection=SegOne;
+  d2:	51 e0       	ldi	r21, 0x01	; 1
+	   SegmentValue = seg_code[0];
+	   DELAY_ms(1);
+   
+	   SegmentSlection=SegTwo;
+  d4:	42 e0       	ldi	r20, 0x02	; 2
+	   SegmentValue = seg_code[1];
+	   DELAY_ms(1);
+ 
+	   SegmentSlection=SegThree;
+  d6:	34 e0       	ldi	r19, 0x04	; 4
+	   SegmentValue = seg_code[2];
+	   DELAY_ms(1);
+
+	   SegmentSlection=SegFour; 
+  d8:	28 e0       	ldi	r18, 0x08	; 8
+{						   
+	unsigned char i;
+								  
+   for(i=0;i<200;i++)	   
+   	 { 
+	   SegmentSlection=SegOne;
+  da:	55 bb       	out	0x15, r21	; 21
+	   SegmentValue = seg_code[0];
+  dc:	90 81       	ld	r25, Z
+  de:	98 bb       	out	0x18, r25	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  e0:	af e9       	ldi	r26, 0x9F	; 159
+  e2:	bf e0       	ldi	r27, 0x0F	; 15
+  e4:	11 97       	sbiw	r26, 0x01	; 1
+  e6:	f1 f7       	brne	.-4      	; 0xe4 <display+0x16>
+  e8:	00 c0       	rjmp	.+0      	; 0xea <display+0x1c>
+  ea:	00 00       	nop
+	   DELAY_ms(1);
+   
+	   SegmentSlection=SegTwo;
+  ec:	45 bb       	out	0x15, r20	; 21
+	   SegmentValue = seg_code[1];
+  ee:	91 81       	ldd	r25, Z+1	; 0x01
+  f0:	98 bb       	out	0x18, r25	; 24
+  f2:	af e9       	ldi	r26, 0x9F	; 159
+  f4:	bf e0       	ldi	r27, 0x0F	; 15
+  f6:	11 97       	sbiw	r26, 0x01	; 1
+  f8:	f1 f7       	brne	.-4      	; 0xf6 <display+0x28>
+  fa:	00 c0       	rjmp	.+0      	; 0xfc <display+0x2e>
+  fc:	00 00       	nop
+	   DELAY_ms(1);
+ 
+	   SegmentSlection=SegThree;
+  fe:	35 bb       	out	0x15, r19	; 21
+	   SegmentValue = seg_code[2];
+ 100:	92 81       	ldd	r25, Z+2	; 0x02
+ 102:	98 bb       	out	0x18, r25	; 24
+ 104:	af e9       	ldi	r26, 0x9F	; 159
+ 106:	bf e0       	ldi	r27, 0x0F	; 15
+ 108:	11 97       	sbiw	r26, 0x01	; 1
+ 10a:	f1 f7       	brne	.-4      	; 0x108 <display+0x3a>
+ 10c:	00 c0       	rjmp	.+0      	; 0x10e <display+0x40>
+ 10e:	00 00       	nop
+	   DELAY_ms(1);
+
+	   SegmentSlection=SegFour; 
+ 110:	25 bb       	out	0x15, r18	; 21
+	   SegmentValue = seg_code[3];
+ 112:	93 81       	ldd	r25, Z+3	; 0x03
+ 114:	98 bb       	out	0x18, r25	; 24
+ 116:	af e9       	ldi	r26, 0x9F	; 159
+ 118:	bf e0       	ldi	r27, 0x0F	; 15
+ 11a:	11 97       	sbiw	r26, 0x01	; 1
+ 11c:	f1 f7       	brne	.-4      	; 0x11a <display+0x4c>
+ 11e:	00 c0       	rjmp	.+0      	; 0x120 <display+0x52>
+ 120:	00 00       	nop
+ 122:	81 50       	subi	r24, 0x01	; 1
+
+void display(unsigned char seg_code[])
+{						   
+	unsigned char i;
+								  
+   for(i=0;i<200;i++)	   
+ 124:	d1 f6       	brne	.-76     	; 0xda <display+0xc>
+
+	   SegmentSlection=SegFour; 
+	   SegmentValue = seg_code[3];
+	   DELAY_ms(1);
+	  }
+  SegmentSlection=NoSeg;
+ 126:	15 ba       	out	0x15, r1	; 21
+  SegmentValue = 0x00;
+ 128:	18 ba       	out	0x18, r1	; 24
+}
+ 12a:	08 95       	ret
+
+0000012c <main>:
+/* start the main program */
+void main() 
+{
+ 12c:	cf 93       	push	r28
+ 12e:	df 93       	push	r29
+ 130:	00 d0       	rcall	.+0      	; 0x132 <main+0x6>
+ 132:	00 d0       	rcall	.+0      	; 0x134 <main+0x8>
+ 134:	cd b7       	in	r28, 0x3d	; 61
+ 136:	de b7       	in	r29, 0x3e	; 62
+    unsigned char fire_code[]={0x8e,0xf9,0xaf,0x86},help_code[]={0x89,0x86,0xc7,0x8c};
+ 138:	89 e8       	ldi	r24, 0x89	; 137
+ 13a:	89 83       	std	Y+1, r24	; 0x01
+ 13c:	86 e8       	ldi	r24, 0x86	; 134
+ 13e:	8a 83       	std	Y+2, r24	; 0x02
+ 140:	87 ec       	ldi	r24, 0xC7	; 199
+ 142:	8b 83       	std	Y+3, r24	; 0x03
+ 144:	8c e8       	ldi	r24, 0x8C	; 140
+ 146:	8c 83       	std	Y+4, r24	; 0x04
+  
+/* Configure the ports as output */  
+  DDRB = C_PortOutput_U8;
+ 148:	8f ef       	ldi	r24, 0xFF	; 255
+ 14a:	87 bb       	out	0x17, r24	; 23
+  DDRC = C_PortOutput_U8;
+ 14c:	84 bb       	out	0x14, r24	; 20
+  while(1)
+    {
+         // display(fire_code);
+	    //  DELAY_us(1000000);
+
+          display(help_code);
+ 14e:	ce 01       	movw	r24, r28
+ 150:	01 96       	adiw	r24, 0x01	; 1
+ 152:	0e 94 67 00 	call	0xce	; 0xce <display>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 156:	8f ef       	ldi	r24, 0xFF	; 255
+ 158:	93 ed       	ldi	r25, 0xD3	; 211
+ 15a:	a0 e3       	ldi	r26, 0x30	; 48
+ 15c:	81 50       	subi	r24, 0x01	; 1
+ 15e:	90 40       	sbci	r25, 0x00	; 0
+ 160:	a0 40       	sbci	r26, 0x00	; 0
+ 162:	e1 f7       	brne	.-8      	; 0x15c <main+0x30>
+ 164:	00 c0       	rjmp	.+0      	; 0x166 <main+0x3a>
+ 166:	00 00       	nop
+ 168:	f2 cf       	rjmp	.-28     	; 0x14e <main+0x22>
+
+0000016a <_exit>:
+ 16a:	f8 94       	cli
+
+0000016c <__stop_program>:
+ 16c:	ff cf       	rjmp	.-2      	; 0x16c <__stop_program>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "keyPad", "keyPad\keyPad.cproj", "{903D2008-55E7-4927-BB34-D1A1C93A7F46}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{903D2008-55E7-4927-BB34-D1A1C93A7F46}.Debug|AVR.ActiveCfg = Debug|AVR
+		{903D2008-55E7-4927-BB34-D1A1C93A7F46}.Debug|AVR.Build.0 = Debug|AVR
+		{903D2008-55E7-4927-BB34-D1A1C93A7F46}.Release|AVR.ActiveCfg = Release|AVR
+		{903D2008-55E7-4927-BB34-D1A1C93A7F46}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

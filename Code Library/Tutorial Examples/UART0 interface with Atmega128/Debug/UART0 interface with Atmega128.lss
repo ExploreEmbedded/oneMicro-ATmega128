@@ -1,0 +1,238 @@
+
+UART0 interface with Atmega128.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000014  00800100  00000124  00000198  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000124  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001ac  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001dc  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000038  00000000  00000000  00000218  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000158  00000000  00000000  00000250  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000010a  00000000  00000000  000003a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000012d  00000000  00000000  000004b2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000064  00000000  00000000  000005e0  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000001ad  00000000  00000000  00000644  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000a2  00000000  00000000  000007f1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00000893  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e4 e2       	ldi	r30, 0x24	; 36
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a4 31       	cpi	r26, 0x14	; 20
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	0f d0       	rcall	.+30     	; 0xd2 <main>
+  b4:	35 c0       	rjmp	.+106    	; 0x120 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <USART_Init>:
+	
+}
+void USART_Init( unsigned int ubrr )
+{
+	/* Set baud rate */
+	UBRR0H = (unsigned char)(ubrr>>8);
+  b8:	90 93 90 00 	sts	0x0090, r25
+	UBRR0L = (unsigned char)ubrr;
+  bc:	89 b9       	out	0x09, r24	; 9
+	/* Enable receiver and transmitter */
+	UCSR0B = (1<<RXEN)|(1<<TXEN);
+  be:	88 e1       	ldi	r24, 0x18	; 24
+  c0:	8a b9       	out	0x0a, r24	; 10
+	/* Set frame format: 8data, 2stop bit */
+	UCSR0C = (1<<USBS)|(3<<UCSZ0);
+  c2:	8e e0       	ldi	r24, 0x0E	; 14
+  c4:	80 93 95 00 	sts	0x0095, r24
+  c8:	08 95       	ret
+
+000000ca <USART_Transmit>:
+}
+
+void USART_Transmit( unsigned char data )
+{
+	/* Wait for empty transmit buffer */
+	while ( !( UCSR0A & (1<<UDRE)) )
+  ca:	5d 9b       	sbis	0x0b, 5	; 11
+  cc:	fe cf       	rjmp	.-4      	; 0xca <USART_Transmit>
+	;
+	/* Put data into buffer, sends the data */
+	UDR0 = data;
+  ce:	8c b9       	out	0x0c, r24	; 12
+  d0:	08 95       	ret
+
+000000d2 <main>:
+unsigned char USART_Receive( void );
+
+
+
+int main( void )
+{
+  d2:	cf 93       	push	r28
+  d4:	df 93       	push	r29
+  d6:	cd b7       	in	r28, 0x3d	; 61
+  d8:	de b7       	in	r29, 0x3e	; 62
+  da:	62 97       	sbiw	r28, 0x12	; 18
+  dc:	0f b6       	in	r0, 0x3f	; 63
+  de:	f8 94       	cli
+  e0:	de bf       	out	0x3e, r29	; 62
+  e2:	0f be       	out	0x3f, r0	; 63
+  e4:	cd bf       	out	0x3d, r28	; 61
+	unsigned char str[18] = "\n\rExplore Embedded";
+  e6:	82 e1       	ldi	r24, 0x12	; 18
+  e8:	e0 e0       	ldi	r30, 0x00	; 0
+  ea:	f1 e0       	ldi	r31, 0x01	; 1
+  ec:	de 01       	movw	r26, r28
+  ee:	11 96       	adiw	r26, 0x01	; 1
+  f0:	01 90       	ld	r0, Z+
+  f2:	0d 92       	st	X+, r0
+  f4:	8a 95       	dec	r24
+  f6:	e1 f7       	brne	.-8      	; 0xf0 <main+0x1e>
+	unsigned char strLenght = 18;
+	unsigned char i = 0;
+	
+	USART_Init ( MYUBRR );
+  f8:	87 e6       	ldi	r24, 0x67	; 103
+  fa:	90 e0       	ldi	r25, 0x00	; 0
+  fc:	dd df       	rcall	.-70     	; 0xb8 <USART_Init>
+
+int main( void )
+{
+	unsigned char str[18] = "\n\rExplore Embedded";
+	unsigned char strLenght = 18;
+	unsigned char i = 0;
+  fe:	80 e0       	ldi	r24, 0x00	; 0
+	
+	USART_Init ( MYUBRR );
+	//USART_Transmit('S' );	
+	while(1)
+	{
+		USART_Transmit( str[i++] );
+ 100:	11 e0       	ldi	r17, 0x01	; 1
+ 102:	18 0f       	add	r17, r24
+ 104:	e1 e0       	ldi	r30, 0x01	; 1
+ 106:	f0 e0       	ldi	r31, 0x00	; 0
+ 108:	ec 0f       	add	r30, r28
+ 10a:	fd 1f       	adc	r31, r29
+ 10c:	e8 0f       	add	r30, r24
+ 10e:	f1 1d       	adc	r31, r1
+ 110:	80 81       	ld	r24, Z
+ 112:	db df       	rcall	.-74     	; 0xca <USART_Transmit>
+		if(i >= strLenght)
+ 114:	12 31       	cpi	r17, 0x12	; 18
+ 116:	10 f4       	brcc	.+4      	; 0x11c <main+0x4a>
+		i = 0;
+ 118:	81 2f       	mov	r24, r17
+ 11a:	f2 cf       	rjmp	.-28     	; 0x100 <main+0x2e>
+ 11c:	10 e0       	ldi	r17, 0x00	; 0
+ 11e:	fc cf       	rjmp	.-8      	; 0x118 <main+0x46>
+
+00000120 <_exit>:
+ 120:	f8 94       	cli
+
+00000122 <__stop_program>:
+ 122:	ff cf       	rjmp	.-2      	; 0x122 <__stop_program>
